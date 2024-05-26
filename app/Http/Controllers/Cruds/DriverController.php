@@ -51,7 +51,7 @@ class DriverController extends Controller
         $driver = Driver::find($driver_id);
 
         $driver->update($request->all());
-        return redirect()->route('cruds.drivers.index');
+        return redirect()->route('drivers.index');
     }
     
     public function show(string $id)
